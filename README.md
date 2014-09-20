@@ -28,6 +28,23 @@ Currently, the multi-compile version of EmberScript is used to allow for multi s
   }
 ```    
 
+### Script file layout
+
+The basic layout of a file is like this. In thee blueprints, `(ember)` is used as the emberscript indicator, but you might as well use simply `(em)`. See the full list of aliases on [emberscript multicompile](git://github.com/kristianmandrup/ember-script#multicompile).
+
+By convention, the first fragment will now be treated as normal coffeescript and be compiled separately before the emberscript (or whatever) coming after the first fragment.
+
+```coffeescript
+`import Ember from 'ember'`
+
+# (ember)
+
+class Post
+  # ...
+
+`export default Post`
+```
+
 ### Status
 Very experimental, but a step in the right direction ;)
 

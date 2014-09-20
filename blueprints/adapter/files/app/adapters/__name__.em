@@ -1,7 +1,7 @@
-import DS from 'ember-data';
+`import DS from 'ember-data'`
 
 # (ember)
 
 <%= classifiedModuleName %>Adapter = DS.ActiveModelAdapter.extend()
 
-`export default <%= classifiedModuleName %>Adapter`
+`export default <%= classifiedModuleName %>Adapter

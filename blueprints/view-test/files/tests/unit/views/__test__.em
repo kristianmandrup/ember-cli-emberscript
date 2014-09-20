@@ -1,4 +1,4 @@
-import { test, moduleFor } from 'ember-qunit';
+`import { test, moduleFor } from 'ember-qunit'`
 
 moduleFor 'view:<%= dasherizedModuleName %>', '<%= classifiedModuleName %>View'
 
