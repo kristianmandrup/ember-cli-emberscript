@@ -25,6 +25,6 @@
     "fs-extra": "^0.11.0",
     "inflection": "^1.4.0",
     "broccoli-ember-script": "git://github.com/kristianmandrup/broccoli-ember-script#multicompile",
-    "ember-script": "git://github.com/kristianmandrup/ember-script#multicompile"
+    "ember-script": "git://github.com/kristianmandrup/ember-script#0.0.16"
   }
 }
