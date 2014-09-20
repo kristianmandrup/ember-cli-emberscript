@@ -1,4 +1,6 @@
-`import <%= camelizedModuleName %> from '<%= dasherizedPackageName %>/utils/<%= dasherizedModuleName %>'`
+import <%= camelizedModuleName %> from '<%= dasherizedPackageName %>/utils/<%= dasherizedModuleName %>';
+
+# (ember)
 
 module '<%= camelizedModuleName %>'
 

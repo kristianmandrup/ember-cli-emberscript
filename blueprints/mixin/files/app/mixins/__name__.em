@@ -1,4 +1,6 @@
-`import Ember from 'ember'`
+import Ember from 'ember';
+
+# (ember)
 
 <%= classifiedModuleName %>Mixin = Ember.Mixin.create()
 

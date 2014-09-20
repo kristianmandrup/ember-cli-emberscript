@@ -1,4 +1,6 @@
-`import { <%= camelizedModuleName %> } from '<%= dasherizedPackageName %>/helpers/<%= dasherizedModuleName %>'`
+import { <%= camelizedModuleName %> } from '<%= dasherizedPackageName %>/helpers/<%= dasherizedModuleName %>';
+
+# (ember)
 
 module '<%=classifiedModuleName %>Helper'
 

@@ -1,4 +1,6 @@
-`import DS from 'ember-data'`
+import DS from 'ember-data';
+
+# (ember)
 
 <%= classifiedModuleName %>Serializer = DS.ActiveModelSerializer.extend()
 

@@ -1,7 +1,7 @@
 {
-  "name": "ember-cli-coffeescript",
-  "version": "0.0.7",
-  "description": "Adds precompilation of CoffeeScript files and all the basic generation types to the `ember generate` command.",
+  "name": "ember-cli-emberscript",
+  "version": "0.0.1",
+  "description": "Adds precompilation of EmberScript files and all the basic generation types to the `ember generate` command.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,15 +15,16 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/kimroen/ember-cli-coffeescript"
+    "url": "git://github.com/kristianmandrup/ember-cli-emberscript"
   },
   "bugs": {
-    "url": "https://github.com/kimroen/ember-cli-coffeescript/issues"
+    "url": "https://github.com/kristianmandrup/ember-cli-emberscript/issues"
   },
-  "homepage": "https://github.com/kimroen/ember-cli-coffeescript",
+  "homepage": "https://github.com/kristianmandrup/ember-cli-emberscript",
   "dependencies": {
     "fs-extra": "^0.11.0",
     "inflection": "^1.4.0",
-    "broccoli-coffee": "~0.1.1"
+    "broccoli-ember-script": "~0.1.1",
+    "ember-script": "git://github.com/kristianmandrup/ember-script#multicompile"
   }
 }
