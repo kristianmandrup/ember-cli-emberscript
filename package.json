@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-emberscript",
-  "version": "0.0.10",
+  "version": "0.0.16",
   "description": "Adds precompilation of EmberScript files and all the basic generation types to the `ember generate` command.",
   "main": "index.js",
   "scripts": {
