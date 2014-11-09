@@ -24,13 +24,13 @@ Currently, the multi-compile version of EmberScript is used to allow for multi s
 ```json
   "dependencies": {
     ...
-    "ember-script": "git://github.com/kristianmandrup/ember-script#0.0.16"
+    "ember-script": "git://github.com/kristianmandrup/ember-script#0.0.17"
   }
-```    
+```
 
 ### Script file layout
 
-The basic layout of a file is like this. In thee blueprints, `(ember)` is used as the emberscript indicator, but you might as well use simply `(em)`. 
+The basic layout of a file is like this. In thee blueprints, `(ember)` is used as the emberscript indicator, but you might as well use simply `(em)`.
 
 See more info @ [emberscript multicompile](https://github.com/kristianmandrup/ember-script/tree/multicompile).
 
@@ -41,11 +41,9 @@ See more info @ [emberscript multicompile](https://github.com/kristianmandrup/em
 
 By convention, the first fragment will then be treated as normal coffeescript and be compiled separately before the emberscript (or whatever) coming after. This allows you to easily insert ES6 module statements where you want etc.
 
+Please check out the [README](https://github.com/kristianmandrup/ember-script/tree/multicompile/) for more details and customisation options.
+
 ```coffeescript
-`import Ember from 'ember'`
-
-# (em)
-
 class Post
   # ...
 
@@ -53,7 +51,7 @@ class Post
 ```
 
 ### Status
-Experimental, but a step in the right direction ;)
+Promising!!
 
 ### Roadmap
 
