@@ -1,26 +1,31 @@
 'use strict';
 var path = require('path');
+var checker = require('ember-cli-version-checker');
 var EmberPreprocessor = require('./lib/coffee-preprocessor');
 
-function EmberscriptAddon(project) {
-  this._project = project;
-  this.name     = 'Ember CLI Emberscript Addon';
-}
+module.exports = {
+  name: 'Ember CLI Emberscript Addon',
 
-EmberscriptAddon.prototype.blueprintsPath = function() {
-  return path.join(__dirname, 'blueprints');
+  shouldSetupRegistryInIncluded: function() {
+    return !checker.isAbove(this, '0.2.0');
+  },
+
+  blueprintsPath: function() {
+    return path.join(__dirname, 'blueprints');
+  },
+
+  setupPreprocessorRegistry: function(type, registry) {
+    // FIXME: since this is being called before included(), what's a safe way to get the app's config?
+    // See https://github.com/kimroen/ember-cli-coffeescript/issues/98
+    var plugin = new EmberPreprocessor({});
+    registry.add('js', plugin);
+  },
+
+  included: function(app) {
+    this.app = app;
+
+    if (this.shouldSetupRegistryInIncluded()) {
+      this.setupPreprocessorRegistry('parent', app.registry);
+    }
+  }
 };
-
-EmberscriptAddon.prototype.included = function(app) {
-  this.app = app;
-
-  var plugin = new EmberPreprocessor(this.app.options.coffeeOptions);
-
-  this.app.registry.add('js', plugin);
-};
-
-// This is just here because it was required in ember-cli v0.0.37.
-// To be removed when compatibility breaks.
-EmberscriptAddon.prototype.treeFor = function() {};
-
-module.exports = EmberscriptAddon;
