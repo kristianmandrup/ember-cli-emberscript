@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/kristianmandrup/ember-cli-emberscript",
   "dependencies": {
-    "fs-extra": "^0.11.0",
+    "fs-extra": "^2.1.2",
     "inflection": "^1.4.0",
     "broccoli-ember-script": "^0.1.1",
     "ember-cli-version-checker": "^1.0.1"
