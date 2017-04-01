@@ -1,4 +1,6 @@
 # EmberScript support for ember-cli
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/kristianmandrup/ember-cli-emberscript.svg)](https://greenkeeper.io/)
 Adds precompilation of EmberScript files and all the basic generation
 types to the `ember generate` command.
 
